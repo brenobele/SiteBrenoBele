@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Breno S. Beletato</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700"
+      rel="stylesheet"
+    />
+    <!-- Bulma Version 0.6.0 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css"
+      integrity="sha256-HEtF7HLJZSC3Le1HcsWbz1hDYFPZCqDhZa9QsCgVUdw="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="css/landing.css" />
+    <link rel="icon" type="image/png" href="img/favicon.ico" sizes="32x32" />
+  </head>
+  <body>
+    <section class="hero is-info is-fullheight">
+      <div class="hero-head">
+        <nav class="navbar">
+          <div class="container">
+            <div class="navbar-brand">
+              <a class="navbar-item" href="../"> BrenoBele </a>
+              <span class="navbar-burger burger" data-target="navbarMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
+            </div>
+            <div id="navbarMenu" class="navbar-menu">
+              <div class="navbar-end">
+                <a class="navbar-item is-active"> Home </a>
+                <a
+                  class="navbar-item"
+                  href="https://github.com/brenobele"
+                  target="_blank"
+                >
+                  GitHub
+                </a>
+                <a
+                  class="navbar-item"
+                  href="http://linkedin.com/in/brenobele"
+                  target="_blank"
+                >
+                  Linkedin
+                </a>
+                <a
+                  class="navbar-item"
+                  href="mailto:contato@brenobele.dev"
+                  target="_blank"
+                >
+                  Contato
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <div class="hero-body">
+        <div class="container">
+          <div class="column is-10 is-offset-1">
+            <h1 class="title is-2">
+              Breno S. Beletato.
+              <span class="has-text-grey-lighter is-size-4">BrenoBele</span>
+            </h1>
+            <h2 class="subtitle">
+              Olá! Eu sou o Breno. <br />
+              Formado em
+              <strong>Análise e Desenvolvimento de Sistemas</strong> pela
+              <a href="http://www.fatecpp.edu.br/" target="_blank">FATEC</a> de
+              Presidente Prudente <br />
+              Pós-graduado em
+              <strong>Redes de Computadores e Comunicação de Dados</strong> pela
+              Universidade Estadual de Londrina (<a
+                href="http://www.uel.br/portal/"
+                target="_blank"
+                >UEL</a
+              >).
+              <br />
+              Para saber mais entre em contato comigo através do e-mail
+              <a href="mailto:contato@brenobele.dev" target="_blank"
+                >contato@brenobele.dev</a
+              >. <br />
+            </h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer has-text-centered">
+      <div class="container">
+        <div class="columns">
+          <div class="column">
+            <p style="margin-top: 1rem">
+              <a href="http://bulma.io" target="_blank">
+                <img
+                  src="https://bulma.io/images/made-with-bulma.png"
+                  alt="Made with Bulma"
+                  width="128"
+                  height="24"
+                />
+              </a>
+            </p>
+            <p>
+              Com a ajuda de
+              <a
+                href="https://bulmatemplates.github.io/bulma-templates/"
+                target="_blank"
+                >Free Bulma Templates</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script async type="text/javascript" src="js/landing.js"></script>
+    <script type="text/javascript" src="js/jquery-3.7.0.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#enviar").click(function () {
+          sendMail();
+        });
+      });
+    </script>
+  </body>
+</html>
