@@ -9,6 +9,10 @@ app.get("/", (req, res) => {
   res.render("index");
 });
 
+app.get("/health", (req, res) => {
+  res.send("OK");
+});
+
 app.listen(port, () => {
   console.log(`App listening on port ${port}`);
 });
