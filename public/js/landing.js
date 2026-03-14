@@ -8,30 +8,3 @@
         menu.classList.toggle('is-active');
     });
 })();
-
-function sendMail() {
-  var email = $('#email').val();
-
-  if(email.length <= 5) {
-    alert('Informe seu e-mail.');
-    return false;
-  }
-
-  var urlData = "&email=" + email;
-
-  $.ajax({
-    type: "POST",
-    url: "sendmail.php",
-    async: true,
-    data: urlData,
-    success: function(data) {
-      $('#retornHTML').html(data);
-    },
-    beforeSend: function() {
-      $('.loading').fadeIn('fast');
-    },
-    complete: function() {
-      $('.loading').fadeOut('fast');
-    }
-  });
-};
