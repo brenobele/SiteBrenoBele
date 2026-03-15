@@ -15,6 +15,7 @@
 
 html,
 body {
+  min-height: 100%;
   font-family: 'Outfit', 'Inter', sans-serif;
   background-color: var(--bg-dark);
   color: var(--text-main);
@@ -110,21 +111,30 @@ a:hover {
 
 /* Animated Background Blobs / Gradients */
 .bg-blobs {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   overflow: hidden;
-  z-index: -1;
+  z-index: 0;
+  pointer-events: none;
 }
 
 .blob {
   position: absolute;
-  filter: blur(80px);
-  opacity: 0.4;
+  filter: blur(110px);
+  opacity: 0.22;
   border-radius: 50%;
-  animation: float 10s infinite ease-in-out alternate;
+  will-change: transform;
+}
+
+.navbar,
+.hero-custom,
+.error-shell,
+.footer-modern {
+  position: relative;
+  z-index: 1;
 }
 
 .blob-1 {
@@ -133,7 +143,7 @@ a:hover {
   background: var(--accent-purple);
   top: -10%;
   left: -5%;
-  animation-delay: 0s;
+  animation: drift-1 18s infinite ease-in-out alternate;
 }
 
 .blob-2 {
@@ -142,7 +152,7 @@ a:hover {
   background: var(--accent-cyan);
   bottom: 10%;
   right: -5%;
-  animation-delay: -5s;
+  animation: drift-2 22s infinite ease-in-out alternate;
 }
 
 .blob-3 {
@@ -151,7 +161,7 @@ a:hover {
   background: var(--accent-blue);
   top: 40%;
   left: 50%;
-  animation-delay: -2s;
+  animation: drift-3 20s infinite ease-in-out alternate;
 }
 
 /* Typography Enhancements */
@@ -263,14 +273,112 @@ a:hover {
   color: var(--accent-purple);
 }
 
+/* 404 Page */
+.error-page {
+  display: flex;
+  flex-direction: column;
+}
+
+.error-shell {
+  flex: 1;
+  display: flex;
+}
+
+.error-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding-top: 7rem;
+  padding-bottom: 3rem;
+}
+
+.error-card {
+  padding: 3rem;
+  text-align: center;
+}
+
+.error-code {
+  font-size: 6rem;
+  line-height: 1;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: var(--accent-cyan);
+  text-shadow: 0 0 30px rgba(6, 182, 212, 0.25);
+}
+
+.error-title {
+  margin-bottom: 1rem;
+}
+
+.error-subtitle {
+  max-width: 38rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.error-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.error-actions .btn-secondary {
+  margin-left: 0;
+}
+
+.error-hint {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.9rem 1.2rem;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.75);
+  border: 1px solid var(--glass-border);
+  color: var(--text-muted);
+}
+
 /* Animations */
-@keyframes float {
+@keyframes drift-1 {
   0% {
-    transform: translate(0, 0) scale(1);
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+
+  50% {
+    transform: translate3d(70px, 30px, 0) scale(1.08);
   }
 
   100% {
-    transform: translate(20px, -20px) scale(1.1);
+    transform: translate3d(20px, 90px, 0) scale(0.96);
+  }
+}
+
+@keyframes drift-2 {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+
+  50% {
+    transform: translate3d(-90px, -40px, 0) scale(1.12);
+  }
+
+  100% {
+    transform: translate3d(-30px, -110px, 0) scale(0.94);
+  }
+}
+
+@keyframes drift-3 {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+
+  50% {
+    transform: translate3d(45px, -60px, 0) scale(1.05);
+  }
+
+  100% {
+    transform: translate3d(-55px, 35px, 0) scale(1.1);
   }
 }
 
@@ -330,5 +438,19 @@ a:hover {
 
   .mobile-margin {
     margin: 1rem;
+  }
+
+  .error-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .error-code {
+    font-size: 4rem;
+  }
+
+  .error-hint {
+    border-radius: 1rem;
+    text-align: left;
+    align-items: flex-start;
   }
 }

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Páginas não encontradas no portfólio de Breno S. Beletato." />
+  <title>Página não encontrada | Breno S. Beletato</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;500;700;800&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css" />
+  <link rel="stylesheet" type="text/css" href="/css/landing.css" />
+  <link rel="icon" type="image/png" href="/img/favicon.ico" sizes="32x32" />
+</head>
+
+<body class="error-page">
+  <div class="bg-blobs">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="/">
+          <span style="font-family: 'Outfit'; font-weight: 800; font-size: 1.5rem;">
+            Breno<span style="color: var(--accent-cyan);">Bele</span>
+          </span>
+        </a>
+
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarMenu" class="navbar-menu">
+        <div class="navbar-end">
+          <a class="navbar-item" href="/">Voltar ao início</a>
+          <a class="navbar-item" href="mailto:contato@brenobele.dev">Contato</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="error-shell" style="min-height: 100vh;">
+    <section class="section error-section">
+      <div class="container">
+        <div class="columns is-vcentered is-centered">
+          <div class="column is-10-tablet is-8-desktop is-7-widescreen">
+            <div class="glass-panel error-card fade-in-up">
+              <p class="error-code">404</p>
+              <h1 class="hero-title error-title">
+                Esta página <span class="gradient-text">sumiu do mapa</span>
+              </h1>
+              <p class="hero-subtitle error-subtitle">
+                O endereço acessado não existe ou foi movido. Você pode voltar para a página inicial e continuar a
+                navegação.
+              </p>
+
+              <div class="error-actions fade-in-up delay-1">
+                <a href="/" class="btn-modern btn-primary">
+                  <i class="fas fa-house btn-icon"></i> Ir para a home
+                </a>
+                <a href="mailto:contato@brenobele.dev" class="btn-modern btn-secondary">
+                  <i class="fas fa-envelope btn-icon"></i> Falar comigo
+                </a>
+              </div>
+
+              <div class="error-hint fade-in-up delay-2">
+                <span class="icon"><i class="fas fa-link"></i></span>
+                <span>Se você digitou a URL manualmente, vale conferir o endereço novamente.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-modern">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-6 has-text-centered">
+          <p class="mb-4">
+            <span
+              style="font-family: 'Outfit'; font-weight: 700; font-size: 1.2rem; margin-bottom: 1rem; display: block;">
+              Breno<span style="color: var(--accent-cyan);">Bele</span>
+            </span>
+            Site construído com <a href="https://nodejs.org/" target="_blank">Node.js</a>, <a href="https://bulma.io"
+              target="_blank">Bulma CSS</a>.
+          </p>
+          <p class="is-size-7">
+            &copy; <span id="year">2026</span> Breno S. Beletato. Todos os direitos reservados.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="/js/landing.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+
+</html>

@@ -13,6 +13,11 @@ app.get("/health", (req, res) => {
   res.send("OK");
 });
 
+// Not found
+app.use((req, res) => {
+  res.status(404).render("404");
+});
+
 app.listen(port, () => {
   console.log(`App listening on http://localhost:${port}`);
 });
