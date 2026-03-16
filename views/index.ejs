@@ -8,26 +8,20 @@
   <meta name="description" content="Portfólio de Breno S. Beletato - Analista e Desenvolvedor de Sistemas" />
   <title>Breno S. Beletato | Desenvolvedor</title>
 
-  <!-- Google Fonts: Outfit for Display, Inter for Sans text -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;500;700;800&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap"
     rel="stylesheet">
 
-  <!-- FontAwesome 6 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <!-- Bulma 1.0.0 CSS Framework -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css" />
-
-  <!-- Custom Modern CSS -->
   <link rel="stylesheet" type="text/css" href="css/landing.css" />
   <link rel="icon" type="image/png" href="img/favicon.ico" sizes="32x32" />
 
-  <!-- Microsoft Clarity Analytics -->
   <script type="text/javascript">
     (function (c, l, a, r, i, t, y) {
       c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
@@ -38,22 +32,18 @@
 </head>
 
 <body>
-
-  <!-- Animated Background Blobs -->
-  <div class="bg-blobs">
+  <div class="page-backdrop" aria-hidden="true"></div>
+  <div class="bg-blobs" aria-hidden="true">
     <div class="blob blob-1"></div>
     <div class="blob blob-2"></div>
     <div class="blob blob-3"></div>
   </div>
 
-  <!-- Navigation -->
   <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
     <div class="container">
       <div class="navbar-brand">
-        <a class="navbar-item" href="/">
-          <span style="font-family: 'Outfit'; font-weight: 800; font-size: 1.5rem;">
-            Breno<span style="color: var(--accent-cyan);">Bele</span>
-          </span>
+        <a class="navbar-item brand-mark" href="#home">
+          Breno<span>Bele</span>
         </a>
 
         <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
@@ -65,111 +55,211 @@
 
       <div id="navbarMenu" class="navbar-menu">
         <div class="navbar-end">
-          <a class="navbar-item" href="#home">Home</a>
-          <a class="navbar-item" href="https://github.com/brenobele" target="_blank">
-            <span class="icon is-small" style="margin-right: 4px;"><i class="fab fa-github"></i></span> GitHub
+          <a class="navbar-item" href="#home">Início</a>
+          <a class="navbar-item" href="#especialidades">Especialidades</a>
+          <a class="navbar-item" href="#formacao">Formação</a>
+          <a class="navbar-item" href="#contato">Contato</a>
+          <a class="navbar-item" href="https://github.com/brenobele" target="_blank" rel="noreferrer">
+            GitHub
           </a>
-          <a class="navbar-item" href="https://linkedin.com/in/brenobele" target="_blank">
-            <span class="icon is-small" style="margin-right: 4px;"><i class="fab fa-linkedin"></i></span> LinkedIn
+          <a class="navbar-item" href="https://linkedin.com/in/brenobele" target="_blank" rel="noreferrer">
+            LinkedIn
           </a>
         </div>
       </div>
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <section id="home" class="hero-custom">
-    <div class="container">
-      <div class="columns is-vcentered">
+  <main>
+    <section id="home" class="hero-custom section">
+      <div class="container">
+        <div class="hero-shell glass-panel">
+          <div class="columns is-variable is-7 is-vcentered">
+            <div class="column is-7-desktop">
+              <div class="fade-in-up">
+                <p class="section-eyebrow">Analista e Desenvolvedor de Sistemas</p>
+                <h1 class="hero-title">
+                  Soluções digitais com estética contida, arquitetura clara e foco em resultado.
+                </h1>
+                <p class="hero-subtitle">
+                  Atuo no desenvolvimento de aplicações e sistemas com uma abordagem pragmática:
+                  tecnologia bem aplicada, comunicação objetiva e experiências que transmitem confiança.
+                </p>
 
-        <!-- Text Content -->
-        <div class="column is-6 px-5" style="padding-left: 2rem; padding-right: 2rem;">
-          <div class="fade-in-up delay-1">
-            <p class="is-size-6 has-text-weight-semibold"
-              style="color: var(--accent-cyan); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 1rem;">
-              Bem-vindo!
-            </p>
-            <h1 class="hero-title">
-              Olá, eu sou <br>
-              <span class="gradient-text">Breno S. Beletato</span>
-            </h1>
-            <p class="hero-subtitle">
-              Sou Analista e Desenvolvedor de Sistemas, focado em criar soluções eficientes, escaláveis e esteticamente
-              modernas.
-              Dedicado a construir a ponte entre tecnologia e resultados.
-            </p>
+                <div class="hero-actions fade-in-up delay-1">
+                  <a href="mailto:contato@brenobele.dev" class="btn-modern btn-primary">
+                    <i class="fas fa-envelope btn-icon"></i> Entrar em contato
+                  </a>
+                  <a href="#especialidades" class="btn-modern btn-secondary">
+                    Conhecer atuação
+                  </a>
+                </div>
 
-            <div class="action-buttons fade-in-up delay-2">
-              <a href="mailto:contato@brenobele.dev" class="btn-modern btn-primary">
-                <i class="fas fa-envelope btn-icon"></i> Entrar em Contato
-              </a>
+                <div class="hero-meta fade-in-up delay-2">
+                  <span>Node.js</span>
+                  <span>Aplicações web</span>
+                  <span>Integração entre negócio e tecnologia</span>
+                </div>
+              </div>
             </div>
 
-            <div class="social-links fade-in-up delay-3">
-              <a href="https://github.com/brenobele" class="social-link" target="_blank" aria-label="GitHub"><i
-                  class="fab fa-github"></i></a>
-              <a href="https://linkedin.com/in/brenobele" class="social-link" target="_blank" aria-label="LinkedIn"><i
-                  class="fab fa-linkedin-in"></i></a>
-              <a href="mailto:contato@brenobele.dev" class="social-link" target="_blank" aria-label="Email"><i
-                  class="fas fa-envelope"></i></a>
+            <div class="column is-5-desktop">
+              <aside class="hero-aside fade-in-up delay-2">
+                <div class="profile-card">
+                  <p class="profile-card-label">Perfil profissional</p>
+                  <h2 class="profile-card-title">Breno S. Beletato</h2>
+                  <p class="profile-card-text">
+                    Desenvolvimento orientado por clareza, manutenção e apresentação visual consistente.
+                  </p>
+
+                  <div class="profile-stats">
+                    <div class="stat-item">
+                      <strong>Foco</strong>
+                      <span>Eficiência com elegância visual</span>
+                    </div>
+                    <div class="stat-item">
+                      <strong>Estilo</strong>
+                      <span>Interfaces sóbrias e comunicação direta</span>
+                    </div>
+                    <div class="stat-item">
+                      <strong>Objetivo</strong>
+                      <span>Transformar requisitos em entregas confiáveis</span>
+                    </div>
+                  </div>
+                </div>
+              </aside>
             </div>
           </div>
         </div>
-
-        <!-- Abstract/Glass Visual Content -->
-        <div class="column is-5 is-offset-1 mt-6 mobile-margin">
-          <div class="glass-panel fade-in-up delay-2 px-5"
-            style="padding: 2.5rem; padding-left: 2rem; padding-right: 2rem;">
-            <div class="content">
-              <h3 class="title is-4" style="color: var(--text-main);">📌 Resumo Acadêmico</h3>
-              <ul style="list-style: none; margin-left: 0;">
-                <li style="margin-bottom: 1.5rem; display: flex; align-items: flex-start;">
-                  <span class="icon has-text-info mt-1 mr-3"><i class="fas fa-laptop-code"></i></span>
-                  <div>
-                    <strong style="color: var(--accent-cyan);">Análise e Desenvolvimento de Sistemas</strong><br>
-                    <span class="is-size-7" style="color: var(--text-muted);">Graduação - FATEC de Presidente
-                      Prudente</span>
-                  </div>
-                </li>
-                <li style="display: flex; align-items: flex-start;">
-                  <span class="icon has-text-info mt-1 mr-3"><i class="fas fa-network-wired"></i></span>
-                  <div>
-                    <strong style="color: var(--accent-purple);">Redes de Computadores e Comunicação</strong><br>
-                    <span class="is-size-7" style="color: var(--text-muted);">Pós-Graduação - Universidade Estadual de
-                      Londrina (UEL)</span>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer -->
+    <section id="especialidades" class="section section-block">
+      <div class="container">
+        <div class="section-heading fade-in-up">
+          <p class="section-eyebrow">Especialidades</p>
+          <h2 class="section-title">Uma presença digital mais madura começa pela estrutura.</h2>
+          <p class="section-copy">
+            O trabalho combina base técnica sólida com escolhas visuais intencionais, evitando excesso
+            para privilegiar legibilidade, ritmo e confiança.
+          </p>
+        </div>
+
+        <div class="columns is-variable is-5 cards-grid">
+          <div class="column">
+            <article class="feature-card glass-panel fade-in-up delay-1">
+              <span class="feature-icon"><i class="fas fa-layer-group"></i></span>
+              <h3>Arquitetura enxuta</h3>
+              <p>
+                Soluções simples, de fácil manutenção e alinhadas com a stack existente, sem abstrações desnecessárias.
+              </p>
+            </article>
+          </div>
+
+          <div class="column">
+            <article class="feature-card glass-panel fade-in-up delay-2">
+              <span class="feature-icon"><i class="fas fa-display"></i></span>
+              <h3>Interface elegante</h3>
+              <p>
+                Layouts responsivos com hierarquia visual clara, identidade discreta e uso refinado da cor azul.
+              </p>
+            </article>
+          </div>
+
+          <div class="column">
+            <article class="feature-card glass-panel fade-in-up delay-3">
+              <span class="feature-icon"><i class="fas fa-diagram-project"></i></span>
+              <h3>Entrega orientada a resultado</h3>
+              <p>
+                Cada decisão busca equilíbrio entre desempenho, apresentação e valor percebido pelo usuário final.
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="formacao" class="section section-block">
+      <div class="container">
+        <div class="columns is-variable is-6 is-vcentered">
+          <div class="column is-5-desktop">
+            <div class="section-heading fade-in-up">
+              <p class="section-eyebrow">Formação</p>
+              <h2 class="section-title">Base acadêmica voltada para construção de soluções consistentes.</h2>
+              <p class="section-copy">
+                A trajetória combina desenvolvimento de sistemas com visão de infraestrutura e comunicação,
+                ampliando a capacidade de desenhar soluções mais completas.
+              </p>
+            </div>
+          </div>
+
+          <div class="column is-7-desktop">
+            <div class="timeline-shell glass-panel fade-in-up delay-1">
+              <article class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                  <p class="timeline-label">Graduação</p>
+                  <h3>Análise e Desenvolvimento de Sistemas</h3>
+                  <p>FATEC de Presidente Prudente</p>
+                </div>
+              </article>
+
+              <article class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                  <p class="timeline-label">Pós-graduação</p>
+                  <h3>Redes de Computadores e Comunicação</h3>
+                  <p>Universidade Estadual de Londrina (UEL)</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="section section-block">
+      <div class="container">
+        <div class="contact-panel glass-panel fade-in-up">
+          <div class="columns is-variable is-6 is-vcentered">
+            <div class="column is-8-desktop">
+              <p class="section-eyebrow">Contato</p>
+              <h2 class="section-title">Se a ideia é transmitir profissionalismo, podemos começar pelo primeiro acesso.</h2>
+              <p class="section-copy contact-copy">
+                Estou disponível para conversar sobre projetos, presença digital e melhorias de interface
+                com uma direção mais elegante e coerente com a sua proposta.
+              </p>
+            </div>
+
+            <div class="column is-4-desktop">
+              <div class="contact-actions">
+                <a href="mailto:contato@brenobele.dev" class="btn-modern btn-primary is-fullwidth">
+                  <i class="fas fa-paper-plane btn-icon"></i> Falar por e-mail
+                </a>
+                <div class="contact-links">
+                  <a href="https://github.com/brenobele" target="_blank" rel="noreferrer">GitHub</a>
+                  <a href="https://linkedin.com/in/brenobele" target="_blank" rel="noreferrer">LinkedIn</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
   <footer class="footer-modern">
     <div class="container">
-      <div class="columns is-centered">
-        <div class="column is-6 has-text-centered">
-          <p class="mb-4">
-            <span
-              style="font-family: 'Outfit'; font-weight: 700; font-size: 1.2rem; margin-bottom: 1rem; display: block;">
-              Breno<span style="color: var(--accent-cyan);">Bele</span>
-            </span>
-            Site construído com <a href="https://nodejs.org/" target="_blank">Node.js</a>, <a href="https://bulma.io"
-              target="_blank">Bulma CSS</a>.
-          </p>
-          <p class="is-size-7">
-            &copy; <span id="year">2026</span> Breno S. Beletato. Todos os direitos reservados.
-          </p>
+      <div class="footer-shell">
+        <div>
+          <p class="footer-brand">Breno<span>Bele</span></p>
+          <p class="footer-copy">Site construído com Node.js, Express, EJS e Bulma CSS.</p>
         </div>
+        <p class="footer-copy">&copy; <span id="year">2026</span> Breno S. Beletato. Todos os direitos reservados.</p>
       </div>
     </div>
   </footer>
 
-  <!-- Scripts -->
   <script type="text/javascript" src="js/landing.js"></script>
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
